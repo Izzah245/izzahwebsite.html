@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<head>
+<title>Family</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+
+.navbar {
+   overflow: hidden;
+   background-color: #FFFFE0;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   }
+
+ .navbar a {
+   float: left;
+   display: block;
+   color:  #FFB6C1;
+   text-align: center;
+   padding: 12px 16px;
+   text-decoration: none;
+   font-size: 18px;
+   }
+
+ .navbar a:hover {
+   background: #ff3333;
+   color: black;
+   }
+
+ .main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; 
+  }
+
+body {
+background-image: url(hometwo.jpeg);
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+font-family: Times New Roman, Arial;
+margin: 0;
+padding: 0;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+<b><a href="index.html">Home</a></b>
+<b><a href="biodata.html">Biodata</a></b>
+<b><a href="education.html">Education</a></b>
+<b><a href="family.html">Family</a></b>
+<b><a href="gallery.html">Gallery</a></b>
+<b><a href="friends.html">Friends</a></b>
+<b><a href="interest.html">Interest</a></b>
+</div>
+
+<br><br><br><br>
+<!-- MAIN (Center website) -->
+<div class="main">
+<div class="w3-container w3-center w3-animate-left">
+<i><b><font size="7">MY HOME</font></b></i>
+<hr>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<font size="3">
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="parents.jpeg" alt=" parents" style="width:100%">
+      <h3>My Parents</h3>
+      <p>Here are my parents. The two most important persons in my life are my father, Mohd Zubir Bin Rejab @ Abd Razak, and mother, Zubidah Binti Che Daud. Despite being self-employed, they always make sure our family is doing well. My parents are a huge source of love and support.</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="content">
+    <img src="cousin.jpeg" alt=" cousin " style="width:100%">
+      <h3>My Cousin</h3>
+      <p>She is the cousin that I am most close to. Perhaps the fact that we are only a year apart in age makes our friendship closer. We are not siblings, but because we grew up together, have many happy experiences together, and we often spend time in conversation, our relation is as close as that of a sister.</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="content">
+    <img src="siblings.jpeg" alt=" Siblings " style="width:100%">
+      <h3>My Siblings</h3>
+      <p>Having seven siblings makes me feel very lucky to be part of this big family. Each of us has a different personality and uniqueness to our relationship. Everyone is busy with their own tasks, but they are always there when needed.</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="content">
+    <img src="convo.jpeg" alt=" Family " style="width:100%">
+      <h3> Convo Day </h3>
+      <p>During my sister's convocation ceremony, this was a memorable moment. She is my family's inspiration. She is not only incredibly smart, but she also works hard to fulfill her dreams and never gives up. I am greatly inspired by my sister's successful graduation and career as a doctor. She proved that everything is possible if we put in a lot of effort and desire.</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<div class="content">
+  <img src="family_one.jpeg" alt="Family" style="width:100%">
+  <h3> My Family </h3>
+  <p>The most unforgettable experience in my life was when my family and I were able to perform Umrah together in Mecca. Alhamdulillah, we were able to gather together as a family, it was an extraordinary blessing. Being there with parents and siblings is an unforgettable memory.</p>
+<p>Our family bond was strengthened by this journey. It serves as a reminder to continue to love one another and become closer to God. I will always cherish this memory as one of the most beautiful moments in life.</p>
+</div>
+</font>
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<head>
+<title>Education</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+ body {margin:0;}
+
+ .navbar {
+   overflow: hidden;
+   background-color: #FFFFE0;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   }
+
+ .navbar a {
+   float: left;
+   display: block;
+   color:  #FFB6C1;
+   text-align: center;
+   padding: 12px 16px;
+   text-decoration: none;
+   font-size: 18px;
+   }
+
+ .navbar a:hover {
+   background: #ff3333;
+   color: black;
+   }
+
+ .main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; 
+  }
+
+body {
+background-image: url(hometwo.jpeg);
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+font-family: 'Times New Roman', Arial;
+font-size: 21;
+margin: 0;
+padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: auto;
+  overflow: hidden;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 100;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+
+</style>
+</head>
+ 
+<body>
+
+<div class="navbar">
+<b><a href="index.html">Home</a></b>
+<b><a href="biodata.html">Biodata</a></b>
+<b><a href="education.html">Education</a></b>
+<b><a href="family.html">Family</a></b>
+<b><a href="gallery.html">Gallery</a></b>
+<b><a href="friends.html">Friends</a></b>
+<b><a href="interest.html">Interest</a></b>
+</body>
+</div>
+
+
+<br><br><br><br><br>
+<div class="w3-container w3-center w3-animate-left">
+<font color="black">
+<font size="7">
+<a name="abc">
+<i><b> MY PATH TO EDUCATION </b></i>
+</font>
+</font>
+</div>
+
+<br>
+<font size="5">
+
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+    <h2><i><b>2009: Tadika Pasti</b></i></h2>
+    <p>The first place I learnt how to read, count and make friends.</p>
+    </div>
+  </div>
+
+  <div class="container right">
+    <div class="content">
+      <h2><i><b>2010: Tabika Kemas </b></i></h2>
+      <p>I transferred to a new school since my sister wanted to join me and study together. Studying here was enjoyable because I can engage in a variety of activities, like acting, playing sports, and taking in the nursery environment.</p>
+    </div>
+  </div>
+
+  <div class="container left">
+    <div class="content">
+      <h2><i><b>2011 - 2016: SK Pokok Sena</b></i></h2>
+      <p>It was a great enjoyable day because there were so many wonderful memories.</p>
+    </div>
+  </div>
+
+  <div class="container right">
+    <div class="content">
+      <h2><i><b>2017 - 2021: SMK Agama Kedah</b></i></h2>
+      <p>High school was hard but enjoyable since I got to live in the hostels and explore new things</p>
+    </div>
+  </div>
+
+  <div class="container left">
+    <div class="content">
+      <h2><i><b>2022 - Now: UiTM Merbok, Kedah</b></i></h2>
+      <p>I'm now pursuing a diploma in information management at UiTM Merbok in Kedah. I'm currently in my fifth semester, which is also my final one. It's so difficult, but I should continue to strive. Please pray for me to pass with honors.</p>
+    </div>
+  </div>
+</font>
+
+
+  
+<br><br>
+
+<div class="w3-container w3-center w3-animate-left">
+<font color="black">
+<font size="7">
+ <a name="def">
+<i><b> EXPERIENCES </b></i>
+</font>
+</font>
+</div>
+
+
+<font size="5">
+<dl>
+<ol>
+
+<p>
+<dt><i><b> 1 August - 24 September 2023: Part Time Working </dt></i></b>
+<dd>My part-time job during the semester break was at a local pharmacy. I learned how to communicate with consumers, interpret their needs, and handle pharmacy inventory, so this was a really worthwhile experience. Plus, I enabled to save financial independence to myself use and to gain the value of determination.</dd>
+</p>
+
+<p>
+<dt><i><b> 21 July - 12 September 2024: An internship at Sultanah Bahiyah Medical Center </dt></i></b>
+<dd>I completed 8 weeks of practical training in Sultanah Bahiyah Hospital, primarily in the Medical Records Department. The experience of this internship was both enjoyable and instructive. I learned how a government institution's medical record system operates. I also learned how patient data is carefully managed and accordance with certain requirements.</dd>
+</p>
+
+<p>
+<dt><i><b> 1 October - 30 November 2023 :Entrepreneurship Experience </dt></i></b>
+<ul>
+<dd>
+<p><li> Organize a modest bracelet business and meet the goal within two months.</li></p>
+<p><li> Using social media platforms like Instagram for product promotion.</li></p>
+<p><li> Acquire business experience.</li></p>
+<p><li> Enhancing time management to balance academic and professional commitments.</li></p>
+</dd>
+</p>
+</font>
+
+<p>
+<a href="#abc">Education</a>
+<a href="#def">Experiences</a>
+</p>
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<head>
+<title>Biodata</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+ 
+ .navbar {
+   overflow: hidden;
+   background-color: #FFFFE0;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   }
+
+ .navbar a {
+   float: left;
+   display: block;
+   color:  #FFB6C1;
+   text-align: center;
+   padding: 12px 16px;
+   text-decoration: none;
+   font-size: 18px;
+   }
+
+ .navbar a:hover {
+   background: #ff3333;
+   color: black;
+   }
+
+ .main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; 
+  }
+
+body {
+background-image: url(homeone.gif);
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+font-family: Times New Roman, Arial;
+margin: 0;
+padding: 0;
+}
+
+img {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 2s;
+            }
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+li::marker {
+  color: maroon;
+}
+
+</style>
+</head>
+
+<body>
+<div class="navbar">
+<b><a href="index.html">Home</a></b>
+<b><a href="biodata.html">Biodata</a></b>
+<b><a href="education.html">Education</a></b>
+<b><a href="family.html">Family</a></b>
+<b><a href="gallery.html">Gallery</a></b>
+<b><a href="friends.html">Friends</a></b>
+<b><a href="interest.html">Interest</a></b>
+</body>
+</div>
+
+<br><br><br>
+<div class="w3-container w3-center w3-animate-left">
+<font color="black">
+<i><b><font size="7"> ABOUT ME </font></b></i>
+</font>
+</div>
+
+<br>
+
+<img src="bookpenang.jpeg" alt="myself" width="300" height="300">
+
+<br><br>
+
+<font color="black">
+<div class="w3-container"> 
+<h2><u><i> Personal Details </i></u></h2>
+<font size="5">
+
+  <ul>
+  <li><b>Name:</b> Nurul Izzah Amani Binti Mohd Zubir </li>
+  <li><b>Nickname:</b> Izzah </li>
+  <li><b>Age:</b> 20 years old </li>
+  <li><b>Gender:</b> Female </li>
+  <li><b>Birthday:</b> 24 May 2004 </li>
+  <li><b>Hometown:</b> Pokok Sena, Kedah</li>
+  <li><b>Nationality:</b> Malaysia </li>
+  <li><b>Language Spoken:</b> Malay and English </li>
+  <li><b>Favourite food:</b> Laksa</li>
+  <li><b>Goals:</b> Achieve the desired goal until successful </li>
+  <li><b> Favourite Quotes:</b> The future belongs to those who believe in the beauty of their dreams </li>
+</ul> 
+<hr> 
+</font>
+</div>
+
+<div class="w3-container"> 
+<h2><u><i>Hobbies</h2></u></i>
+<font size="5">
+
+<ul>
+<li>Reading</li>
+<li>Listening to music</li>
+<li>Drawing</li>
+<li>Photography</li>
+<hr> 
+</font>
+</div>
+
+<div class="w3-container"> 
+<h2><u><i>Contact</h2></u></i>
+<font size="5">
+
+<ul>
+  <li><b>Phone:</b> 013- 5621195 </li>
+  <li><b>Social Media:<b>   
+  <a href="https://x.com/shokora245?t=YrriEcN-E_RxcBACHW2bKQ&s=09" class="fa fa-twitter">       </a>
+  <a href="https://www.instagram.com/izzahmnijc/profilecard/?igsh=MTgyMDcyb3EybHpyNg==" class="fa fa-instagram"></a>
+  </li>
+  <hr> 
+  </font>
+</div>
+
+<center>
+<body onload="startTime()">
+
+<div id="txt"></div>
+
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+</center>
+
+</body>
+</html>
